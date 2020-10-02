@@ -1,0 +1,51 @@
+<h4> Received events </h4>
+
+<div class="row">
+  <div class="col-md-3" [ngClass]="{'active': zones['zone1']}">
+    <div class="zone">Zone 1</div>
+  </div>
+
+  <div class="col-md-3" [ngClass]="{'active': zones['zone1']}">
+    <div class="zone">Zone 2</div>
+  </div>
+
+  <div class="col-md-3" [ngClass]="{'active': zones['zone1']}">
+    <div class="zone">Zone 3</div>
+  </div>
+</div>
+
+<hr>
+
+<h4> Send events </h4>
+
+<div class="row">
+  <div class="col-md-3">
+    <input [(ngModel)]="inputField" style="width: 100%; height: 38px">
+  </div>
+
+  <div class="col-md-2">
+    <button type="button"
+            class="btn btn-primary"
+            (click)="addEventToQueue()">
+      Add Event
+    </button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h5> Events </h5>
+
+    <div *ngFor="let event of events" class="alert alert-primary">{{event}}</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 text-right">
+    <button type="button"
+            class="btn btn-primary"
+            (click)="sendEvents()">
+      Send Events
+    </button>
+  </div>
+</div>

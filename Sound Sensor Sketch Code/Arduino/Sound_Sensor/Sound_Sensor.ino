@@ -1,4 +1,4 @@
-int sound_din=D0;
+int sound_din=2;
 int sound_ain=A0;
 int ad_value;
 void setup()
