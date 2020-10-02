@@ -15,8 +15,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 //HostName=SHowTell.azure-devices.net;DeviceId=CIA;SharedAccessKey=sKE3E0P8nG/ELy1D8GjyrU2k/PA2KZZhlZCnJmGuOBg=
-#define IOT_CONFIG_WIFI_SSID            "HUAWEI-5GCPE-5G-FDCC"
-#define IOT_CONFIG_WIFI_PASSWORD        "D0Q5MR0LJEG"
+#define IOT_CONFIG_WIFI_SSID            "HUAWEI-5GCPE-FDCC" //"chris"
+#define IOT_CONFIG_WIFI_PASSWORD        "D0Q5MR0LJEG"//"test@123"
 //#define IOTHUB_CLIENT_TRANSPORT_PROVIDER protocol = MQTT_Protocol
 /**
    IoT Hub Device Connection String setup
@@ -25,6 +25,8 @@
    Then click on the named Device ID, and you will have able to copy the Primary or Secondary Device Connection String to this sample.
 */
 #define DEVICE_CONNECTION_STRING    "HostName=SHowTell.azure-devices.net;DeviceId=CIA;SharedAccessKey=sKE3E0P8nG/ELy1D8GjyrU2k/PA2KZZhlZCnJmGuOBg="
+
+#define SAMPLE_MQTT 1
 
 #if defined(ARDUINO_ARCH_ESP8266)
 #define sample_init esp8266_sample_init
